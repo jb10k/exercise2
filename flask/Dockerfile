@@ -1,4 +1,5 @@
-FROM --platform=linux/amd64 python:3.9.2-alpine
+#FROM --platform=linux/amd64 python:3.9.2-alpine
+FROM python:3.9-alpine AS base
 
 RUN pip install --upgrade pip
 RUN apk add curl
