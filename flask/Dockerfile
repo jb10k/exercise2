@@ -1,4 +1,4 @@
-FROM python:3.9.2-alpine
+FROM --platform=linux/amd64 python:3.9.2-alpine
 
 RUN pip install --upgrade pip
 RUN apk add curl
